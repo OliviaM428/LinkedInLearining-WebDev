@@ -1,10 +1,10 @@
 const genrePick = document.getElementById("genre-select");
 
-//let genre = genrePick.value;
+genre = genrePick.value;
 
 genrePick.addEventListener("change", (event) => {
     let genre = genrePick.value;
-    //console.log(genre);
+    console.log(genre);
     const url = "https://api.sampleapis.com/movies/" + genre;
     getMovies(url);
 });
